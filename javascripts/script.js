@@ -4,11 +4,8 @@ $(document).ready(function(){
   $('.modal-trigger').leanModal();
   var $nav = $("nav");
 
-	//caches a jQuery object containing the header element
-	// var header = $('.noBackground');
 	$(window).scroll(function() {
 		var scroll = $(window).scrollTop();
-
 		if (scroll >= 525) {
       $nav.addClass("line");
       $nav.removeClass("transparent");
@@ -17,8 +14,12 @@ $(document).ready(function(){
 			$nav.addClass("transparent");
 		}
 	});
-
-  //
+  $("#logoimg").click(function() {
+    console.log('hello');
+    $('html, body').animate({
+      scrollTop: ($('#aboutme').first().offset().top)
+    },500);
+  });
   $("#top").click(function() {
     console.log('hello');
     $('html, body').animate({
@@ -37,35 +38,4 @@ $(document).ready(function(){
       scrollTop: ($('#skillsecHeader').first().offset().top)
     },500);
   });
-  // $("#home").click(function() {
-  //   console.log('hello');
-  //   $('html, body').animate({
-  //     scrollTop: ($('body').first().offset().top)
-  //   },500);
-  // });
-  // $("#homeme").click(function() {
-  //   console.log('hello');
-  //   $('html, body').animate({
-  //     scrollTop: ($('body').first().offset().top)
-  //   },500);
-  // });
-  // $("#contacts").click(function() {
-  //   console.log('hello');
-  //   $('html, body').animate({
-  //     scrollTop: ($('#contactme').first().offset().top)
-  //   },500);
-  // });
-  // $("#contactsme").click(function() {
-  //   console.log('hello');
-  //   $('html, body').animate({
-  //     scrollTop: ($('#contactme').first().offset().top)
-  //   },500);
-  // });
-  // $("#emailmove").click(function() {
-  //   console.log('hello');
-  //   $('html, body').animate({
-  //     scrollTop: ($('#contactme').first().offset().top)
-  //   },500);
-  // });
-  //
 });

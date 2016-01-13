@@ -144,11 +144,14 @@ nav ul a {
 .logoimg {
   margin-bottom: -3px;
 }
+.logoimg:hover {
+  cursor: pointer;
+}
 /*===============*/
 /*======Projects=========*/
 /*===============*/
 
-#portHeader, #skillsecHeader {
+#portHeader, #skillsecHeader, #aboutme {
   margin-top: 6%;
   margin-bottom: 3%;
   text-align: center;
@@ -156,6 +159,7 @@ nav ul a {
 
 .card {
   height: 250px;
+  width: 100%;
 }
 
 .card-image {
@@ -168,6 +172,10 @@ nav ul a {
 .onRequest:hover {
   cursor: pointer;
 }
+
+/*===============*/
+/*======Skills=========*/
+/*===============*/
 .card-panel {
   height: 240px;
 }
@@ -178,4 +186,30 @@ nav ul a {
 #skillHeader{
   text-align: center;
   margin-top: -3px;
+}
+
+/*===============*/
+/*======About Me=========*/
+/*===============*/
+#shpeel {
+  font-size: 20px;
+}
+.downloadSet {
+  margin-top: 1px;
+}
+.inLine {
+  display: inline-block;
+}
+
+#resumeModal {
+  width: 90%;
+  height: 800px !important;
+}
+.centerResume {
+  text-align: center;
+}
+
+footer {
+  margin-top: 10%;
+  font-size: 36px;
 }

@@ -21,7 +21,7 @@
   <div class="headerimg" id="beginning">
     <nav class="transparent">
       <div>
-        <ul class="logoimg">
+        <ul class="logoimg" id="logoimg">
           <li><img src="img/logo.gif" alt=""></li>
         </ul>
         <a href="#" data-activates="mobile-demo" class="button-collapse right" style="margin-right: 50px; color: black !important;"><i class="material-icons">menu</i></a>
@@ -71,8 +71,8 @@
         <!--  ==================================================     -->
         <ul class="right hide-on-med-and-down">
           <li><a id="top">Home</a></li>
-          <li><a id="skills">Skills</a></li>
           <li><a id="portfolio">Projects</a></li>
+          <li><a id="skills">Skills</a></li>
           <li><a class="dropdown-button" href="#" data-activates="dropdown">Contact Me<i class="mdi-navigation-arrow-drop-down right"></i></a></li>
         </ul>
         <ul class="side-nav" id="mobile-demo">
@@ -113,6 +113,7 @@
     <div id="projects">
       <h1 id="portHeader">PROJECTS</h1>
       <div class="container">
+      <!-- <div class="container"> -->
         <div class="row">
           <div class="col l4">
             <div class="card">
@@ -120,8 +121,8 @@
                 <img class="activator" src="img/animenetwork.png">
               </div>
               <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4">AnimeNetwork <span style="color:red">(W.I.P)</span><i class="material-icons right">more_vert</i></span>
-                <p><a href="http://animenetwork.herokuapp.com">View Project</a></p>
+                <span class="card-title activator grey-text text-darken-4">AnimeNetwork<i class="material-icons right">more_vert</i></span>
+                <p><a href="http://animenetwork.herokuapp.com">View Project<span style="color:red; font-size:14px;">(W.I.P)</span></a></p>
               </div>
               <div class="card-reveal">
                 <span class="card-title grey-text text-darken-4">Info and Tech Used<i class="material-icons right">close</i></span>
@@ -185,7 +186,7 @@
           <div class="col l4">
             <div class="card">
               <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator" src="img/wheelswap2.png">
+                <img class="activator" src="img/wheelswap.png">
               </div>
               <div class="card-content">
                 <span class="card-title activator grey-text text-darken-4">WheelSwap<i class="material-icons right">more_vert</i></span>
@@ -214,7 +215,7 @@
           <div class="col l4">
             <div class="card">
               <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator" src="img/screensearch2.png">
+                <img class="activator" src="img/screensearch.png">
               </div>
               <div class="card-content">
                 <span class="card-title activator grey-text text-darken-4">Screen Search<i class="material-icons right">more_vert</i></span>
@@ -238,7 +239,7 @@
           <div class="col l4">
             <div class="card">
               <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator" src="img/CCCC2.png">
+                <img class="activator" src="img/CCCC.png">
               </div>
               <div class="card-content">
                 <span class="card-title activator grey-text text-darken-4">CCCC<i class="material-icons right">more_vert</i></span>
@@ -368,12 +369,56 @@
     </div>
 
     <!--  ==================================================     -->
+    <!--  ====================ABOUT ME==============================     -->
     <!--  ==================================================     -->
-    <!--  ==================================================     -->
 
+    <div class="container">
+      <h1 id="aboutme">About Me</h1>
+      <div class="row">
+        <div class="col s12 m6 l6">
+          <p id="shpeel">I am a FULL STACK DEVELOPER, focusing primarily on Javascript in the MEAN stack.
+            I love to build. Ever since I was a child I enjoyed the process of starting with
+            nothing but bits and pieces and working to put everything together into something
+            I was proud of. This love of building led me to the world of programming, and I
+            have enjoyed building for the web ever since. </p>
+            <h5>R&Eacute;SUM&Eacute;:
+              <span class="contact">
+                <div class="inLine">
+                  <a class="modal-trigger" href="#resumeModal">
+                    <span class="underline">View</span>
+                  </a>
+                </div>
+                <div class="inLine">
+                  /
+                </div>
+                <div class="inLine">
+                  <a class="download" href="img/Michael_Sankovich_Resume.pdf" download>
+                    <div class="downloadSet">
+                      <img class="download" src="img/download2.png">
+                    </div>
+                  </a>
+                </div>
+              </span>
+            </h5>
+        </div>
+        <div class="col s12 m6 l6">
+          <a class="twitter-timeline" href="https://twitter.com/Sankyxx" data-widget-id="664735661950283776">Tweets by @Sankyxx</a>
+          <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
-    About me section: Has the twitter feed. About me. Story. Resume. Etc.
+        </div>
+      </div>
+    </div>
 
+  <div id="resumeModal" class="modal">
+    <div class="modal-content">
+      <div class="centerResume">
+        <img src="img/Michael_Sankovich_Resume.png" alt="">
+      </div>
+    <div class="modal-footer">
+      <a href="#!" class="waves-effect waves-green btn-flat modal-close">Close</a>
+    </div>
+  </div>
+</div>
 
   <div id="emailModal" class="modal modal-fixed-footer">
     <div class="modal-content">
@@ -408,89 +453,6 @@
       <a href="#!" class="waves-effect waves-green btn-flat modal-close">Close</a>
     </div>
   </div>
-
-<!--
-<div class="row">
-<div id="contactme">
-<br>
-<br>
-<br>
-</div>
-<div class="small-6 small-offset-2 small-centered medium-6 medium-offset-4 medium-centered large-6 large-offset-4 large-centered columns">
-<div ontouchstart="">
-<div class="newbutton">
-<a href="#" data-reveal-id="contactModal">Email Michael</a>
-</div>
-</div>
-</div>
-<div class="small-12 medium-12 large-12 columns">
-<div class="contentone">
-
-<div class="small-12 medium-4 large-4 columns infoborder">
-
-<div class="infoone">
-<h3>PHONE: <span class="phoneContact" style: "font-size: 18px;">201-213-0126</span></h3>
-<hr>
-<h3>EMAIL: <span class="phoneContact">misankovich@gmail.com</span></h3>
-<hr>
-<h3>R&Eacute;SUM&Eacute;: <span class="contact"> <a href="#" data-reveal-id="resumeModal"><span class="underline">View /</span> <a class="download" href="img/Michael_Sankovich_Resume.jpg" download><img class="download" src="img/download.png"></a></span></h3>
-
-<hr>
-<h3><a href='https://github.com/mikesankovich'>GitHub</a></h3>
-<h3><a href='https://twitter.com/Sankyxx'>Twitter</a></h3>
-<h3><a href='http://www.linkedin.com/in/MSankovich'>LinkedIn</a></h3>
-
-</div>
-</div>
-<div class="small-12 medium-7 medium-offset-1 large-7 large-offset-1 columns hide-for-small-only">
-<a class="twitter-timeline" href="https://twitter.com/Sankyxx" data-widget-id="664735661950283776">Tweets by @Sankyxx</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-
-</div>
-
-</div>
-
-<div id="resumeModal" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
-<img src='img/Michael_Sankovich_Resume.jpg'>
-<a class="close-reveal-modal" aria-label="Close">&#215;</a>
-</div>
-
-
-
-
-
-</div>
-</div>
-</div>
-
-<div>
-<hr>
-</div>
-
-
-<div id="contactModal" class="reveal-modal small" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
-<div class="small-12 medium-8 large-8 columns formcolor">
-<form class="form-horizontal" id="contact_form">
-<p class="form-group">
-<label for="name">Your Name:</label>
-<input id="name" name="name" type="text" required>
-</p>
-<div style="margin-top: 1px !important;"><p class="form-group">
-<label for="email">Your Email: </label>
-<input id="email" name="email" type="text" required>
-</p>
-</div>
-<p class="form-group">
-<label for="msg">Message: </label>
-<textarea id="msg" name="msg" cols="6" rows="6"></textarea>
-</p>
-<div class="small-4 small-offset-7 medium-4 medium-offset-7 large-4 large-offset-7 columns">
-<button id="submit" name="submit" class="nice medium radius blue button"><i class="fi-mail medium"></i> Send Email</button>
-</div>
-</form>
-</div>
-<a class="close-reveal-modal" aria-label="Close">&#215;</a>
-</div> -->
 
 
 <!-- <div class="show-for-medium-up accordion contacticons" id="accordion">
