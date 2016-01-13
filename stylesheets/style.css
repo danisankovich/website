@@ -38,6 +38,7 @@ a {
   border-radius: 9000px;
   border: 8px solid white;
   box-shadow: 0px 3px 0px #BBBBBB;
+  z-index: 2;
 }
 .test {
   text-align: center;
@@ -49,4 +50,13 @@ a {
   height: 87vh;
   background-image: url("../img/headerimage.png");
   background-repeat: no-repeat;
+}
+
+nav {
+  background-color: transparent !important;
+  box-shadow: 0 0 0 0 rgba(0,0,0,0.16),0 0 0 0 rgba(0,0,0,0.12);
+}
+
+nav ul a {
+  color: black !important;
 }
