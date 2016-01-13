@@ -1,3 +1,7 @@
+/*===============*/
+/*======Header=========*/
+/*===============*/
+
 html, body {
   margin:0;
   padding:0;
@@ -42,7 +46,7 @@ a {
 }
 .test {
   text-align: center;
-  margin-top: -7%;
+  margin-top: -6%;
 }
 
 .headerimg {
@@ -55,8 +59,19 @@ a {
 nav {
   background-color: transparent !important;
   box-shadow: 0 0 0 0 rgba(0,0,0,0.16),0 0 0 0 rgba(0,0,0,0.12);
+  position: fixed;
 }
 
 nav ul a {
   color: black !important;
+}
+/*===============*/
+/*======Projects=========*/
+/*===============*/
+#projects {
+  margin-top: 10%;
+}
+
+.card {
+  height: 290px;
 }
