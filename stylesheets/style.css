@@ -140,13 +140,17 @@ nav {
 nav ul a {
   color: black !important;
 }
+
+.logoimg {
+  margin-bottom: -3px;
+}
 /*===============*/
 /*======Projects=========*/
 /*===============*/
 
-#portHeader {
-  margin-top: 4%;
-  margin-bottom: 2%;
+#portHeader, #skillsecHeader {
+  margin-top: 6%;
+  margin-bottom: 3%;
   text-align: center;
 }
 
@@ -163,4 +167,15 @@ nav ul a {
 }
 .onRequest:hover {
   cursor: pointer;
+}
+.card-panel {
+  height: 240px;
+}
+.skillHeader{
+  text-align: center;
+  font-size: 18px;
+}
+#skillHeader{
+  text-align: center;
+  margin-top: -3px;
 }

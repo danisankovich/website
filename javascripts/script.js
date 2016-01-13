@@ -31,12 +31,12 @@ $(document).ready(function(){
       scrollTop: ($('#projects').first().offset().top)
     },500);
   });
-  // $("#portfoliome").click(function() {
-  //   console.log('hello');
-  //   $('html, body').animate({
-  //     scrollTop: ($('#portfolionav').first().offset().top)
-  //   },500);
-  // });
+  $("#skills").click(function() {
+    console.log('hello');
+    $('html, body').animate({
+      scrollTop: ($('#skillsecHeader').first().offset().top)
+    },500);
+  });
   // $("#home").click(function() {
   //   console.log('hello');
   //   $('html, body').animate({
