@@ -56,6 +56,13 @@ a {
   background-repeat: no-repeat;
 }
 
+.icon {
+  height: 28px;
+}
+.icona {
+  margin-top: 7px;
+}
+
 nav {
   background-color: transparent !important;
   box-shadow: 0 0 0 0 rgba(0,0,0,0.16),0 0 0 0 rgba(0,0,0,0.12);
