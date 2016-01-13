@@ -143,8 +143,11 @@ nav ul a {
 /*===============*/
 /*======Projects=========*/
 /*===============*/
-#projects {
-  margin-top: 10%;
+
+#portHeader {
+  margin-top: 4%;
+  margin-bottom: 2%;
+  text-align: center;
 }
 
 .card {

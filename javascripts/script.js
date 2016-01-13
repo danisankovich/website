@@ -1,7 +1,6 @@
 $(document).ready(function(){
-
+  $('.dropdown-button').dropdown();
   $(".button-collapse").sideNav();
-  // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
   $('.modal-trigger').leanModal();
   var $nav = $("nav");
 
@@ -20,24 +19,18 @@ $(document).ready(function(){
 	});
 
   //
-  // $("#about").click(function() {
-  //   console.log('hello');
-  //   $('html, body').animate({
-  //     scrollTop: ($('.line').first().offset().top)
-  //   },500);
-  // });
-  // $("#aboutme").click(function() {
-  //   console.log('hello');
-  //   $('html, body').animate({
-  //     scrollTop: ($('.line').first().offset().top)
-  //   },500);
-  // });
-  // $("#portfolio").click(function() {
-  //   console.log('hello');
-  //   $('html, body').animate({
-  //     scrollTop: ($('#portstuff').first().offset().top)
-  //   },500);
-  // });
+  $("#top").click(function() {
+    console.log('hello');
+    $('html, body').animate({
+      scrollTop: ($('#beginning').first().offset().top)
+    },500);
+  });
+  $("#portfolio").click(function() {
+    console.log('hello');
+    $('html, body').animate({
+      scrollTop: ($('#projects').first().offset().top)
+    },500);
+  });
   // $("#portfoliome").click(function() {
   //   console.log('hello');
   //   $('html, body').animate({
