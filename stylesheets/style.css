@@ -75,3 +75,10 @@ nav ul a {
 .card {
   height: 290px;
 }
+
+.onRequest {
+  color: red;
+}
+.onRequest:hover {
+  cursor: pointer;
+}
