@@ -39,6 +39,12 @@ html, body {
   background-color: white;
   cursor: pointer;
 }
+.redNote {
+  text-align: center;
+  margin-top: -5px;
+  color: red;
+  margin-bottom: 4%;
+}
 @media (min-width: 700px) {
   .whenSmall {
     display: none;
@@ -169,7 +175,6 @@ nav ul a {
 
 #portHeader, #skillsecHeader, #aboutme {
   margin-top: 6%;
-  margin-bottom: 3%;
   text-align: center;
 }
 
