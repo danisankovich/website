@@ -24,7 +24,7 @@
         <ul class="logoimg" id="logoimg">
           <li><img src="img/logo.gif" alt=""></li>
         </ul>
-        <a href="#" data-activates="mobile-demo" class="button-collapse right" style="margin-right: 50px; color: black !important;"><i class="material-icons">menu</i></a>
+        <!-- <a href="#" data-activates="mobile-demo" class="button-collapse right" style="margin-right: 50px; color: black !important;"><i class="material-icons">menu</i></a> -->
         <!--  ==================================================     -->
         <!--  ========================Dropdown content==========================     -->
         <!--  ==================================================     -->
@@ -69,17 +69,18 @@
         <!--  ==================================================     -->
         <!--  ==================================================     -->
         <!--  ==================================================     -->
-        <ul class="right hide-on-med-and-down">
+        <ul class="right">
+        <!-- <ul class="right hide-on-med-and-down"> -->
+          <li><a id="top">Home</a></li>
+          <li><a id="portfolio">Projects</a></li>
+          <li><a id="skills" class="hide-on-small-only">Skills</a></li>
+          <li><a class="dropdown-button" href="#" data-activates="dropdown">Contact Me<i class="mdi-navigation-arrow-drop-down right"></i></a></li>
+        </ul>
+        <!-- <ul class="side-nav" id="mobile-demo">
           <li><a id="top">Home</a></li>
           <li><a id="portfolio">Projects</a></li>
           <li><a id="skills">Skills</a></li>
-          <li><a class="dropdown-button" href="#" data-activates="dropdown">Contact Me<i class="mdi-navigation-arrow-drop-down right"></i></a></li>
-        </ul>
-        <ul class="side-nav" id="mobile-demo">
-          <li><a id="top">Home</a></li>
-          <li><a href="badges.html">Skills</a></li>
-          <li><a id="portfolio">Projects</a></li>
-          <li><a class="dropdown-button" href="#" data-activates="dropdown2">Contact Me<i class="mdi-navigation-arrow-drop-down right"></i></a></li>        </ul>
+          <li><a class="dropdown-button" href="#" data-activates="dropdown2">Contact Me<i class="mdi-navigation-arrow-drop-down right"></i></a></li>        </ul> -->
         </div>
       </nav>
       <div class='title'>
@@ -412,7 +413,8 @@
   <div id="resumeModal" class="modal">
     <div class="modal-content">
       <div class="centerResume">
-        <img src="img/Michael_Sankovich_Resume.jpg" alt="">
+        <img src="img/Michael_Sankovich_Resume.jpg" class="hide-on-small-only" alt="">
+        <img src="img/Michael_Sankovich_Resumesmall.jpg" class="hide-on-med-and-up" alt="">
       </div>
     <div class="modal-footer">
       <a href="#!" class="waves-effect waves-green btn-flat modal-close">Close</a>
@@ -424,8 +426,8 @@
     <div class="modal-content">
       <div class="row">
         <form class="col s12">
-          <div class="col sm4 offset-s4">
-            <h2>Email Michael</h2>
+          <div class="col s4 offset-s2 m4 offset-m4">
+            <h2 style="text-align: center">Email Michael</h2>
           </div>
           <div class="input-field col s8 offset-s2">
             <input id="Name" type="text" required>

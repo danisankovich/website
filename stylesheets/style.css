@@ -40,6 +40,9 @@ html, body {
   cursor: pointer;
 }
 @media (min-width: 700px) {
+  .whenSmall {
+    display: none;
+  }
   h1 {
     font-size: 72px;
     text-transform: uppercase;
@@ -74,6 +77,12 @@ html, body {
     height: 87vh;
     background-image: url("../img/headerimage.png");
     background-repeat: no-repeat;
+  }
+  .logoimg {
+    margin-bottom: -3px;
+  }
+  .logoimg:hover {
+    cursor: pointer;
   }
 }
 @media (max-width: 700px) {
@@ -112,6 +121,15 @@ html, body {
     background-image: url("../img/headerimage.png");
     background-repeat: no-repeat;
   }
+  .logoimg {
+    margin-bottom: -3px;
+  }
+  .logoimg img {
+    height: 60px;
+  }
+  .logoimg:hover {
+    cursor: pointer;
+  }
 }
 
 a {
@@ -145,12 +163,6 @@ nav ul a {
   color: black !important;
 }
 
-.logoimg {
-  margin-bottom: -3px;
-}
-.logoimg:hover {
-  cursor: pointer;
-}
 /*===============*/
 /*======Projects=========*/
 /*===============*/
