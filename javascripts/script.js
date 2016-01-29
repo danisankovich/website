@@ -37,4 +37,10 @@ $(document).ready(function(){
       scrollTop: ($('#skillsecHeader').first().offset().top)
     },500);
   });
+  $('#emailOpenButton').click(function() {
+    $('#emailModal').openModal();
+  });
+  $('#toGitHub').click(function() {
+    window.open('https://github.com/mikesankovich', '_blank');
+  });
 });
