@@ -83,6 +83,7 @@ html, body {
     height: 87vh;
     background-image: url("../img/headerimage.png");
     background-repeat: no-repeat;
+    background-size: cover;
   }
   .logoimg {
     margin-bottom: -3px;
