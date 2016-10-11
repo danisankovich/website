@@ -177,6 +177,15 @@ nav ul a {
 #portHeader, #skillsecHeader, #aboutme {
   margin-top: 6%;
   text-align: center;
+  font-size: 54px;
+}
+
+#FETop {
+  margin-top: -20px;
+}
+
+.someExp {
+  margin-top: -18px !important;
 }
 
 .card {
@@ -208,6 +217,7 @@ nav ul a {
 #skillHeader{
   text-align: center;
   margin-top: -3px;
+  font-size: 26px;
 }
 
 /*===============*/
