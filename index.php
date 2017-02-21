@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="en" ng-app="mysite">
+<html class="no-js" lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -362,12 +362,13 @@
               <div class="row" id="FETop">
                 <div class="col s6">
                   <ul id="backEnd" class="skillHeader">
+                    <li>PHP</li>
                     <li>Python</li>
-                    <li>Ruby</li>
                   </ul>
                 </div>
                 <div class="col s6">
                   <ul id="backEnd" class="skillHeader">
+                    <li>Ruby</li>
                     <li>Ruby On Rails</li>
                   </ul>
                 </div>
@@ -434,36 +435,71 @@
   <div id="emailModal" class="modal modal-fixed-footer">
     <div class="modal-content">
       <div class="row">
-        <form class="col s12">
-          <br>
-          <br>
-          <h5 style="text-align: center">Please be patient while I find an email service to replace Mandrill, since it became a non-free service.</h5>
-          <br>
-          <br>
-          <h5 style="text-align: center">I can be emailed at misankovich@gmail.com</h5>
-          <!-- <div class="col s4 offset-s2 m4 offset-m4"> -->
-            <!-- <h2 style="text-align: center">Email Michael</h2> -->
-          <!-- </div> -->
-          <!-- <div class="input-field col s8 offset-s2">
-            <input id="Name" type="text" required>
-            <label for="Name">Name</label>
-          </div>
-          <div class="input-field col s8 offset-s2">
-            <input id="Email" type="email" required>
-            <label for="Email">Email</label>
-          </div>
-          <div class="input-field col s8 offset-s2">
-            <input id="Subject" type="text" required>
-            <label for="Subject">Subject</label>
-          </div> -->
+        <div class="col-sm-offset-1 col-sm-10 contactForm">
+          <h3>Contact Me: </h3>
+          <?php
+            $name = $_POST["name"];
+            $email = $_POST["email"];
+            $message = $_POST["message"];
+            $errors = "";
+            $noName = '<p><strong>Name Field Is Required!<strong></p>';
+            $noEmail = '<p><strong>Email Field Is Required!<strong></p>';
+            $invalidEmail = '<p><strong>Email Not Valid!<strong></p>';
+            $noMessage = '<p><strong>Message Field Is Required!<strong></p>';
+
+            if ($_POST["submit"]) { //checks for post data named submit
+              if (!$name) {
+                $errors .= $noName;
+              } else {
+                $name = filter_var($name, FILTER_SANITIZE_STRING);
+              }
+              if (!$email) {
+                $errors .= $noEmail;
+              } else {
+                $email = filter_var($email, FILTER_SANITIZE_EMAIL);
+                if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+                  $errors .= $invalidEmail;
+                }
+              }
+              if (!$message) {
+                $errors .= $noMessage;
+              } else {
+                $message = filter_var($message, FILTER_SANITIZE_STRING);
+              }
+              if ($errors) {
+                $resultMessage = '<div class="alert alert-danger">' . $errors . '</div>';
+              } else {
+                $to = 'misankovich@gmail.com';
+                $subject = "Saw Your Website";
+                $message = "
+                  <p>Name: $name</p>
+                  <p>Email: $email</p>
+                  <p>Message: </p>
+                  <p><strong>$message</strong></p>";
+                $headers = "Content-type: text/html";
+                if (mail($to, $subject, $message, $headers)) {
+                  // header("Location: thanks.php");
+                }
+              }
+            }
+          ?>
+          <form class="" method="post" id="emailForm">
+            <div class="form-group">
+              <label for="name">Name: </label>
+              <input type="text" name="name" id="name" placeholder="Name" class="form-control" value="<?php echo $_POST["name"] ?>" />
+            </div>
+            <div class="form-group">
+              <label for="email">Email: </label>
+              <input type="text" name="email" id="email" placeholder="Email" class="form-control" value="<?php echo $_POST["email"] ?>"/>
+            </div>
+            <div class="form-group">
+              <label for="message">Message: </label>
+              <textarea name="message" id="message" class="form-control" rows="15"><?php echo $_POST["message"] ?></textarea>
+            </div>
+            <input type="submit" name="submit" class="btn btn-success btn-lg" value="Send Message">
+          </form>
         </div>
-        <!-- <div class="row">
-          <div class="input-field col s8 offset-s2">
-            <textarea id="msg" class="materialize-textarea" required></textarea>
-            <label for="msg">Message</label>
-          </div>
-        </div> -->
-      </form>
+      </div>
     </div>
     <div class="modal-footer">
       <!-- <a href="#!" class="waves-effect waves-green btn-flat sendMail">Send Email</a> -->
