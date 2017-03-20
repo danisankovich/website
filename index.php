@@ -114,11 +114,40 @@
           <div class="col l4 m6">
             <div class="card">
               <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src="img/homefromhome.png">
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">HomeFromHome<i class="material-icons right">more_vert</i></span>
+                <p><a href="http://homeawayfromhome.herokuapp.com" target="_blank">View Project<span style="color:red; font-size:14px;">(W.I.P)</span></a></p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">Info and Tech Used<i class="material-icons right">close</i></span>
+                <p>
+                  <p>A platform for users to share travel stories, blogs, and pictures and to find places to stay during their next journey</p>
+                  <a href="https://github.com/mikesankovich/homefromhome">Github Link</a>
+                  <ul>
+                    <li>JavaScript</li>
+                    <li>React</li>
+                    <li>Redux</li>
+                    <li>ExpressJS</li>
+                    <li>Node.js</li>
+                    <li>MongoDB</li>
+                    <li>HTML/CSS</li>
+                    <li>Bootstrap</li>
+                    <li>Webpack</li>
+                  </ul>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col l4 m6">
+            <div class="card">
+              <div class="card-image waves-effect waves-block waves-light">
                 <img class="activator" src="img/animenetwork.png">
               </div>
               <div class="card-content">
                 <span class="card-title activator grey-text text-darken-4">AnimeNetwork<i class="material-icons right">more_vert</i></span>
-                <p><a href="http://animenetwork.herokuapp.com" target="_blank">View Project<span style="color:red; font-size:14px;">(W.I.P)</span></a></p>
+                <p><a href="http://animenetwork.herokuapp.com" target="_blank">View Project<span style="color:red; font-size:14px;">(last updated: 02/2016)</span></a></p>
               </div>
               <div class="card-reveal">
                 <span class="card-title grey-text text-darken-4">Info and Tech Used<i class="material-icons right">close</i></span>
@@ -180,7 +209,7 @@
               </div>
               <div class="card-content">
                 <span class="card-title activator grey-text text-darken-4">Challenge Repo<i class="material-icons right">more_vert</i></span>
-                <p><a class="onRequest">Site Behind NDA</a></p>
+                <p><a class="onRequest">Site Unavailable to Public</a></p>
               </div>
               <div class="card-reveal">
                 <span class="card-title grey-text text-darken-4">Info and Tech Used<i class="material-icons right">close</i></span>
@@ -198,36 +227,6 @@
                     <li>Mandrill API</li>
                     <li>Grunt</li>
                     <li>Sweetalerts</li>
-                  </ul>
-                </p>
-              </div>
-            </div>
-          </div>
-
-
-          <div class="col l4 m6">
-            <div class="card">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator" src="img/CCCC.png">
-              </div>
-              <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4">CCCC<i class="material-icons right">more_vert</i></span>
-                <p><a href="https://cultclassic.herokuapp.com/#/" target="_blank">View Project</a></p>
-              </div>
-              <div class="card-reveal">
-                <span class="card-title grey-text text-darken-4">Info and Tech Used<i class="material-icons right">close</i></span>
-                <p>
-                  <p>A three day project in the MEAN stack. A platform on which event organizers can post listings for local cult classic showings</p>
-                  <ul>
-                    <li>JavaScript</li>
-                    <li>AngularJS</li>
-                    <li>ExpressJS</li>
-                    <li>Node.js</li>
-                    <li>MongoDB</li>
-                    <li>jQuery</li>
-                    <li>HTML/CSS</li>
-                    <li>Bootstrap</li>
-                    <li>Mandrill API</li>
                   </ul>
                 </p>
               </div>
