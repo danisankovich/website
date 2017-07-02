@@ -114,17 +114,46 @@
           <div class="col l4 m6">
             <div class="card">
               <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src="img/conventiontracker.png">
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">Convention Tracker<i class="material-icons right">more_vert</i></span>
+                <p><a href="http://convention-tracker.herokuapp.com" target="_blank">View Project</a></p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">Info and Tech Used<i class="material-icons right">close</i></span>
+                <p>
+                  <p>An organizational tool to help groups keep track of events and conventions that members are attending.</p>
+                  <a href="https://github.com/mikesankovich/convention-tracker" target="_blank">Github Link</a>
+                  <ul>
+                    <li>JavaScript</li>
+                    <li>React</li>
+                    <li>Redux</li>
+                    <li>ExpressJS</li>
+                    <li>Node.js</li>
+                    <li>MongoDB</li>
+                    <li>HTML/CSS</li>
+                    <li>Bootstrap</li>
+                    <li>Webpack</li>
+                  </ul>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col l4 m6">
+            <div class="card">
+              <div class="card-image waves-effect waves-block waves-light">
                 <img class="activator" src="img/homefromhome.png">
               </div>
               <div class="card-content">
                 <span class="card-title activator grey-text text-darken-4">HomeFromHome<i class="material-icons right">more_vert</i></span>
-                <p><a href="http://homeawayfromhome.herokuapp.com" target="_blank">View Project<span style="color:red; font-size:14px;">(W.I.P)</span></a></p>
+                <p><a href="http://homeawayfromhome.herokuapp.com" target="_blank">View Project</a></p>
               </div>
               <div class="card-reveal">
                 <span class="card-title grey-text text-darken-4">Info and Tech Used<i class="material-icons right">close</i></span>
                 <p>
                   <p>A platform for users to share travel stories, blogs, and pictures and to find places to stay during their next journey</p>
-                  <a href="https://github.com/mikesankovich/homefromhome">Github Link</a>
+                  <a href="https://github.com/mikesankovich/homefromhome" target="_blank">Github Link</a>
                   <ul>
                     <li>JavaScript</li>
                     <li>React</li>
@@ -173,111 +202,6 @@
                     <li>Foundation</li>
                     <li>Gulp</li>
                     <li>Sweetalerts</li>
-                  </ul>
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col l4 m6">
-            <div class="card">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator" src="img/screensearch.png">
-              </div>
-              <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4">Screen Search<i class="material-icons right">more_vert</i></span>
-                <p><a href="http://mikesankovich.github.io/screensearch/" target="_blank">View Project</a></p>
-              </div>
-              <div class="card-reveal">
-                <span class="card-title grey-text text-darken-4">Info and Tech Used<i class="material-icons right">close</i></span>
-                <p>
-                  <p>Look up information on your favorite movies and television shows using the OMDB api.</p>
-                  <ul>
-                    <li>Javascript</li>
-                    <li>Angular</li>
-                    <li>Materialize</li>
-                    <li>HTML/CSS</li>
-                    <li>OMDB api</li>
-                  </ul>
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col l4 m6">
-            <div class="card">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator" src="img/challengerepo.png">
-              </div>
-              <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4">Challenge Repo<i class="material-icons right">more_vert</i></span>
-                <p><a class="onRequest">Site Unavailable to Public</a></p>
-              </div>
-              <div class="card-reveal">
-                <span class="card-title grey-text text-darken-4">Info and Tech Used<i class="material-icons right">close</i></span>
-                <p>
-                  <p>A repository built to store all challenges, resources, and notes for students at Coding House. Live project only available on request.</p>
-                  <ul>
-                    <li>JavaScript</li>
-                    <li>AngularJS</li>
-                    <li>ExpressJS</li>
-                    <li>Node.js</li>
-                    <li>MongoDB</li>
-                    <li>jQuery</li>
-                    <li>Jade/SCSS</li>
-                    <li>Bootstrap</li>
-                    <li>Mandrill API</li>
-                    <li>Grunt</li>
-                    <li>Sweetalerts</li>
-                  </ul>
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col l4 m6">
-            <div class="card">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator" src="img/wheelswap.png">
-              </div>
-              <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4">WheelSwap<i class="material-icons right">more_vert</i></span>
-                <p><a href="http://wheelswap.herokuapp.com" target="_blank">View Project</a></p>
-              </div>
-              <div class="card-reveal">
-                <span class="card-title grey-text text-darken-4">Info and Tech Used<i class="material-icons right">close</i></span>
-                <p>
-                  <p>
-                    A platform on which users can list and trade their vintage, classic, or otherwise high-end automobiles.
-                  </p>
-                  <ul>
-                    <li>JavaScript</li>
-                    <li>AngularJS</li>
-                    <li>ExpressJS</li>
-                    <li>Node.js</li>
-                    <li>MongoDB</li>
-                    <li>jQuery</li>
-                    <li>HTML/CSS</li>
-                    <li>Bootstrap</li>
-                  </ul>
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col l4 m6">
-            <div class="card">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator" src="img/snakegif.gif" alt="img/snake.png">
-              </div>
-              <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4">Sanky Snake<i class="material-icons right">more_vert</i></span>
-                <p><a href="http://mikesankovich.github.io/snakegame/" target="_blank">View Project</a></p>
-              </div>
-              <div class="card-reveal">
-                <span class="card-title grey-text text-darken-4">Info and Tech Used<i class="material-icons right">close</i></span>
-                <p>
-                  <p>My build of the classic game</p>
-                  <ul>
-                    <li>JavaScript</li>
-                    <li>jQuery</li>
-                    <li>HTML/CSS</li>
                   </ul>
                 </p>
               </div>
@@ -386,8 +310,8 @@
       <h1 id="aboutme">About Me</h1>
       <div class="row">
         <div class="col s12 m6 l6">
-          <p id="shpeel">I am a FULL STACK DEVELOPER, focusing primarily on Javascript in the MEAN stack.
-            I love to build. Ever since I was a child I enjoyed the process of starting with
+          <p id="shpeel">I am a FULL STACK DEVELOPER, focusing primarily on Javascript in the MERN stack.
+            I love to build. Ever since I was a kid I enjoyed the process of starting with
             nothing but bits and pieces and working to put everything together into something
             I was proud of. This love of building led me to the world of programming, and I
             have enjoyed building for the web ever since. </p>
